@@ -8,5 +8,5 @@ Rails.application.routes.draw do
     end
   end
   resources :reviews, only: [ :destroy ]
-  resources :comments, only: [ :show, :edit, :update, :destroy ]
+  resources :comments, only: [:show, :edit, :update, :destroy]
 end
